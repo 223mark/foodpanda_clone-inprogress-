@@ -113,7 +113,9 @@
       </div>
 
       <div class="grid grid-cols-5 gap-4 -mt-[50px]">
-        <CityCard city="Yangon" image="/images/Yangon.webp" />
+        <Link :href="route('resturants#index')">
+          <CityCard city="Yangon" image="/images/Yangon.webp" />
+        </Link>
         <CityCard city="Mandalay" image="/images/mandalay.webp" />
         <CityCard city="Mawlamyine" image="/images/mawlamyine.webp" />
         <CityCard city="Yangon" image="/images/Yangon.webp" />
@@ -252,7 +254,6 @@
 
 <script setup>
 import AuthenticatedLayout from "@/Layouts/AuthenticatedLayout.vue";
-import { Head } from "@inertiajs/vue3";
 
 //components
 import CityCard from "@/Components/CityCard.vue";
